@@ -14,10 +14,18 @@ Today, I decided upon my project and started researching the hardware I'll need.
 **Total time spent: 1h**
 
 
-# May 23rd: Building Python Script
+# May 23rd: Script Building
 
 I'm still waiting on some parts, so I started learning about the Google Places and Geolocation APIs. I built the basic script that the Raspberry PI on the docking device will need ot run.
 
-![Idea Sketch](IMG_6064.png)
+![Code Screenshot](image.png)
 
 **Total time spent: 1.5hrs**
+
+# May 23rd: PCB Design Day 1
+
+Today, I started designing my PCB in KiCAD. A lot of the time, I was just reading datasheets to understand what parts I'll need. Most of my focus was on the power system since I want my compass to work off battery as well as USB-C
+
+![Custom PCB Start](image-1.png)
+
+**Total time spent: 4hrs**
