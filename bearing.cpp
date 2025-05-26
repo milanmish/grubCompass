@@ -5,7 +5,7 @@ String incomingData = "";
 
 void setup() {
     Serial.begin(9600);
-    myServo.attach(5);  // Use an appropriate PWM-capable pin, e.g., GPIO 5
+    myServo.attach(5);  // figure out which pin is the servo on
   }
 
 void loop() {
@@ -18,10 +18,10 @@ void loop() {
             float grubLon = incomingData.substring(commaIndex + 1).toFloat();
 
 
-            // find the angle between the points
+            // finds the angle between the points
 
-            currentLat = 0; // replace with actual current latitude
-            currentLon = 0; // replace with actual current longitude
+            currentLat = 0; // replace later with actual stuff from gps
+            currentLon = 0; // replace
 
             float deltaLat = grubLat - currentLat;
             float deltaLon = grubLon - currentLon;
