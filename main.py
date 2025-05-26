@@ -55,7 +55,7 @@ location = randomGrub["geometry"]["location"]
 grubLat = location["lat"]
 grubLon = location["lng"]
 
-# Now I need to find a way to send this to the ESP32
+# now I need to find a way to send this to the ESP32
 
 message = f"{grubLat},{grubLon}\n"
 port.write(message.encode())
