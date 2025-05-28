@@ -9,7 +9,7 @@ created_at: "2025-05-22"
 
 Today, I decided upon my project and started researching the hardware I'll need. I decided that I'm going to have two components: the compass and the dock. The dock will be built on a Raspberry Pi Zero 2 W and the compass will be on an ESP32. 
 
-![Idea Sketch](IMG_6064.png)
+![Planning](img/IMG_6064.png)
 
 **Total time spent: 1h**
 
@@ -18,7 +18,7 @@ Today, I decided upon my project and started researching the hardware I'll need.
 
 I'm still waiting on some parts, so I started learning about the Google Places and Geolocation APIs. I built the basic script that the Raspberry PI on the docking device will need ot run.
 
-![Code Screenshot](image.png)
+![!\[Code Screenshot\](image.png)](img/image.png)
 
 **Total time spent: 1.5hrs**
 
@@ -26,6 +26,14 @@ I'm still waiting on some parts, so I started learning about the Google Places a
 
 Today, I started designing my PCB in KiCAD. A lot of the time, I was just reading datasheets to understand what parts I'll need. Most of my focus was on the power system since I want my compass to work off battery as well as USB-C
 
-![Custom PCB Start](image-1.png)
+![PCB_Day1](img/image-1.png)
 
 **Total time spent: 4hrs**
+
+# May 28th: PCB Design Day 2
+
+I've been working more on the PCB design and have changed some choices around how I'm going to wire my sensors. I'll still have a seperate dock/compass, but the custom PCB for the compass won't have the GPS directly wired to it (I already have an Adafruit GPS, so I can save money). I'm still deciding if I want to wire the IMU as a seperate board or build it in.
+
+I also changed some stuff in my power system. Instead of having a USB-C input on the compass, I'm going to have it charge from the dock on a three pin connector.
+
+![PCB_Day2](image.png)
