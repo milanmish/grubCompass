@@ -61,9 +61,7 @@ def findGrub():
     address = randomGrub.get("vicinity", "No address")
     print(f"Random nearby restaurant: {name} at {address} ({grubLat}, {grubLon})")
 
-# Link the button to the function
 button.when_pressed = findGrub
 
-# Keep the script running
 print("Waiting for button press...")
 pause()
