@@ -1,23 +1,20 @@
-import serial
 import requests
 import random
-import time
 import os
+from gpiozero import Button
+from signal import pause
 from dotenv import load_dotenv
+
 
 load_dotenv()
 api_key = os.getenv("GOOGLE_API_KEY")
-baud = 9600
-port = serial.Serial('/dev/ttyUSB0', baud, timeout=1)
+
+button = Button(17, pull_up=True, bounce_time=0.1)
 
 def getCurrentLocation():
     url = f"https://www.googleapis.com/geolocation/v1/geolocate?key={api_key}"
-    payload = {
-        "considerIp": True
-    }
-    headers = {
-        "Content-Type": "application/json"
-    }
+    payload = {"considerIp": True}
+    headers = {"Content-Type": "application/json"}
 
     response = requests.post(url, json=payload, headers=headers)
 
@@ -28,7 +25,6 @@ def getCurrentLocation():
         accuracy = data["accuracy"]
         print(f"Location: ({lat}, {lon}) with ±{accuracy} meters accuracy")
         return lat, lon
-    
     else:
         print("Failed to get location:", response.status_code, response.text)
         return None, None
@@ -45,17 +41,29 @@ def getNearbyRestaurants(lat, lon):
     response = requests.get(url, params=params)
     return response.json().get("results", [])
 
-lat, lon = getCurrentLocation()
+def findGrub():
+    lat, lon = getCurrentLocation()
+    if lat is None or lon is None:
+        print("Could not get location, try again.")
+        return
 
-nearbyGrub = getNearbyRestaurants(lat, lon)
+    nearbyGrub = getNearbyRestaurants(lat, lon)
 
-randomGrub = random.choice(nearbyGrub)
+    if not nearbyGrub:
+        print("No restaurants found nearby!")
+        return
 
-location = randomGrub["geometry"]["location"]
-grubLat = location["lat"]
-grubLon = location["lng"]
+    randomGrub = random.choice(nearbyGrub)
+    location = randomGrub["geometry"]["location"]
+    grubLat = location["lat"]
+    grubLon = location["lng"]
+    name = randomGrub.get("name", "Unknown")
+    address = randomGrub.get("vicinity", "No address")
+    print(f"Random nearby restaurant: {name} at {address} ({grubLat}, {grubLon})")
 
-# now I need to find a way to send this to the ESP32
+# Link the button to the function
+button.when_pressed = findGrub
 
-message = f"{grubLat},{grubLon}\n"
-port.write(message.encode())
+# Keep the script running
+print("Waiting for button press...")
+pause()

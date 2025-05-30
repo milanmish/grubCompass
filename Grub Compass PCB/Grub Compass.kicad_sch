@@ -3791,7 +3791,7 @@
 		(end 236.22 207.01)
 		(stroke
 			(width 0)
-			(type default)
+			(type solid)
 		)
 		(fill
 			(type none)
@@ -3853,7 +3853,7 @@
 		)
 		(uuid "cd00e110-5be6-454a-a0ca-dfbc4f4d97e4")
 	)
-	(text "Magnetometer"
+	(text "IMU"
 		(exclude_from_sim no)
 		(at 187.452 149.098 0)
 		(effects
