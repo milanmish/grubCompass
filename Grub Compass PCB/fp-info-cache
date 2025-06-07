@@ -1,4 +1,4 @@
-25800369411236420
+25803866792714977
 Audio_Module
 Reverb_BTDR-1H
 Digital Reverberation Unit, http://www.belton.co.kr/inc/downfile.php?seq=17&file=pdf (footprint from http://www.uk-electronic.de/PDF/BTDR-1.pdf)
@@ -103452,6 +103452,20 @@ PCB_USB_connector
 0
 4
 4
+grubCompass
+BC-4-3PD
+
+
+0
+5
+5
+grubCompass
+PinHeader_1x02_P1.00mm_Vertical
+Through hole straight pin header, 1x02, 1.00mm pitch, single row
+Through hole pin header THT 1x02 1.00mm single row
+0
+2
+2
 grubCompass
 TS-1088-AR02016
 

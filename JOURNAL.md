@@ -36,4 +36,12 @@ I've been working more on the PCB design and have changed some choices around ho
 
 I also changed some stuff in my power system. Instead of having a USB-C input on the compass, I'm going to have it charge from the dock on a three pin connector.
 
-![PCB_Day2](image.png)
+![PCB_Day2](img\image-2.png)
+
+**Total time spend: 4.5hrs**
+
+# June 6th: PCB Design Day 3
+
+I've taken a bit of a break but I'm finishing up my custom PCB. I want to be able to use the ESP32 for other projects in the future so I but a bunch of headers for future projects. I'm also using headers for the power supply, servo, gps, and imu. I've also started designing the compass in Fusion.
+
+![PCB_Day3](img\image-3.png)
