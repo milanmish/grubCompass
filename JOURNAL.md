@@ -16,7 +16,7 @@ Today, I decided upon my project and started researching the hardware I'll need.
 
 # May 23rd: Script Building
 
-I'm still waiting on some parts, so I started learning about the Google Places and Geolocation APIs. I built the basic script that the Raspberry PI on the docking device will need ot run.
+I'm still waiting on some parts, so I started learning about the Google Places and Geolocation APIs. I built the basic script that the Raspberry PI on the docking device will need to run.
 
 ![!\[Code Screenshot\](image.png)](img/image.png)
 
