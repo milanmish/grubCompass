@@ -45,3 +45,4 @@ I also changed some stuff in my power system. Instead of having a USB-C input on
 I've taken a bit of a break but I'm finishing up my custom PCB. I want to be able to use the ESP32 for other projects in the future so I but a bunch of headers for future projects. I'm also using headers for the power supply, servo, gps, and imu. I've also started designing the compass in Fusion.
 
 ![PCB_Day3](img\image-3.png)
+![PCB_3D](img\image-4.png)

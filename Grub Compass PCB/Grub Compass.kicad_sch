@@ -5067,6 +5067,10 @@
 		(uuid "b3937b5c-7f07-4731-960e-dcf3ae070e0e")
 	)
 	(no_connect
+		(at 116.84 59.69)
+		(uuid "c7cbe84e-1e59-4d64-a371-366138625d9c")
+	)
+	(no_connect
 		(at 120.65 69.85)
 		(uuid "cef8fab7-5f8d-4a31-88b8-f77727f33856")
 	)
@@ -5100,7 +5104,7 @@
 	)
 	(wire
 		(pts
-			(xy 106.68 59.69) (xy 116.84 59.69)
+			(xy 106.68 59.69) (xy 118.11 59.69)
 		)
 		(stroke
 			(width 0)
@@ -5350,6 +5354,16 @@
 	)
 	(wire
 		(pts
+			(xy 116.84 44.45) (xy 106.68 44.45)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4176d9e2-3c59-4989-8bdc-0d6cca291e3b")
+	)
+	(wire
+		(pts
 			(xy 120.65 97.79) (xy 120.65 62.23)
 		)
 		(stroke
@@ -5377,6 +5391,16 @@
 			(type default)
 		)
 		(uuid "48214f98-23c3-4cb7-8800-fc34e7aff7c1")
+	)
+	(wire
+		(pts
+			(xy 118.11 67.31) (xy 118.11 59.69)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4a8b7aa8-781c-4f11-9666-7d4e3b2b9f74")
 	)
 	(wire
 		(pts
@@ -5530,16 +5554,6 @@
 	)
 	(wire
 		(pts
-			(xy 116.84 69.85) (xy 116.84 59.69)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "708db5e2-5830-4e64-9294-b86e272882fa")
-	)
-	(wire
-		(pts
 			(xy 106.68 41.91) (xy 119.38 41.91)
 		)
 		(stroke
@@ -5647,6 +5661,16 @@
 			(type default)
 		)
 		(uuid "892afb00-cdbd-4cf0-81ad-a0f7e33b75e0")
+	)
+	(wire
+		(pts
+			(xy 116.84 69.85) (xy 116.84 44.45)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8bfe0ff1-9210-4f06-83d2-32ba7d28d717")
 	)
 	(wire
 		(pts
@@ -5760,16 +5784,6 @@
 	)
 	(wire
 		(pts
-			(xy 118.11 44.45) (xy 118.11 67.31)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "cbcfe726-150b-4042-9ed0-b88d48f46ed9")
-	)
-	(wire
-		(pts
 			(xy 43.18 152.4) (xy 59.69 152.4)
 		)
 		(stroke
@@ -5817,16 +5831,6 @@
 			(type default)
 		)
 		(uuid "d321e7c9-f678-4018-a54e-b5c2ee5fa0df")
-	)
-	(wire
-		(pts
-			(xy 106.68 44.45) (xy 118.11 44.45)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "d3de650b-12ca-458c-9388-4166483793d7")
 	)
 	(wire
 		(pts
@@ -6240,6 +6244,28 @@
 					(size 1.27 1.27)
 				)
 				(justify right)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "SERVO_PWM"
+		(shape input)
+		(at 106.68 52.07 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "82b0a746-fc9e-4dc4-a225-c068a083eb07")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 120.8532 52.07 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
 				(hide yes)
 			)
 		)
